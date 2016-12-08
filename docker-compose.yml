@@ -5,6 +5,9 @@ services:
   environment:
     - HUBOT_HIPCHAT_JID=657012_4582000@chat.hipchat.com
     - HUBOT_HIPCHAT_PASSWORD=HiChaHuBot.
+    - HUBOT_JENKINS_URL=http://192.168.178.55:8081
+    - HUBOT_JENKINS_AUTH=admin:secret
+
   depends_on:
     - redis
 
