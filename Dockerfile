@@ -1,6 +1,6 @@
 FROM node
 
-RUN npm install -g yo generator-hubot hubot-hipchat
+RUN npm install -g yo generator-hubot hubot-hipchat githubot
 
 RUN mkdir /opt/hubot && cd /opt/hubot && \
   git clone --depth=1 https://github.com/jkohlmetz/myhubot.git && \
@@ -13,6 +13,11 @@ ENV HUBOT_PORT 8080
 ENV HUBOT_ADAPTER hipchat
 ENV HUBOT_NAME myhubot
 ENV REDIS_URL=tcp://172.17.0.1:6379
+
+
+ENV HUBOT_JENKINS_URL=http://jenkins_server
+ENV HUBOT_JENKINS_AUTH=user:passwd 
+
 
 WORKDIR /opt/hubot/myhubot
 
