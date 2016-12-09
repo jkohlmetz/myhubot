@@ -236,9 +236,4 @@ module.exports = (robot) ->
     build: jenkinsBuild
     describe: jenkinsDescribe
     last: jenkinsLast
-<<<<<<< HEAD
-	}
-
-=======
   }
->>>>>>> b8a18a00f43e2f2372a081d5e6277322ac864684
