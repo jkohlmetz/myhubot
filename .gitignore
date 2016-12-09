@@ -1,3 +1,5 @@
 node_modules
 .DS_Store*
 .hubot_history
+redis_data
+docker-compose.yml
